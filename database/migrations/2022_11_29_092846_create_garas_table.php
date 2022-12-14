@@ -17,8 +17,10 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('address');
+            $table->string('phone');
+            $table->string('describe');
             $table->string('image');
-            $table->integer('car_id');
+            
             $table->timestamps();
         });
     }

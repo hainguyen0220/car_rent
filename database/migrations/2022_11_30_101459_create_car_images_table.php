@@ -18,7 +18,6 @@ return new class extends Migration
             $table->string('image_path')->nullable();
             $table->integer('car_id');
 
-
             $table->timestamps();
         });
     }

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="{{asset('admin/plugins/fontawesome-free/css/all.min.css')}}">
   <!-- Theme style -->
   <link rel="stylesheet" href="{{asset('admin/dist/css/adminlte.min.css')}}">
+  <script src="https://kit.fontawesome.com/d6b472a6eb.js" crossorigin="anonymous"></script>
   @yield('css')
 
 </head>

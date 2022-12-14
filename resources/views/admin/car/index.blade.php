@@ -28,7 +28,7 @@
                       <th scope="col">Tên ô tô</th>
                       <th scope="col">Tên hãng</th>
                       <th scope="col">Hình ảnh</th>
-                      <th scope="col">Giá</th>
+                      <th scope="col">Giá/ngày</th>
                       <th scope="col">Mô tả</th>
                       
 
@@ -43,13 +43,13 @@
                         <tr>
                           
                           <td>1</td>
-                          <td>teh</td>
-                          <td>s</td>
-                          <td>12222222222222</td>
+                          <td>HONDA I8</td>
+                          <td>HONDA</td>
+                          <td></td>
                           <td>
-                            <img scr='' alt=''>
+                            250.000
                           </td>
-                          <td>hgfgh</td>
+                          <td>xe thông thoáng siêu mới</td>
 
 
 

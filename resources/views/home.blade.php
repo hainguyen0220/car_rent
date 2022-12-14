@@ -1,36 +1,23 @@
-@extends('layouts.admin')
- 
-@section('title')
-  <title>Trang chu</title>
-@endsection
- 
+@extends('layouts.app')
+
 @section('content')
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-header">{{ __('Dashboard') }}</div>
 
-      <!-- Content Wrapper. Contains page content -->
-  <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    @include('partials.content-header', ['name' => 'Home', 'key' => 'home'])
+                <div class="card-body">
+                    @if (session('status'))
+                        <div class="alert alert-success" role="alert">
+                            {{ session('status') }}
+                        </div>
+                    @endif
 
-    <!-- /.content-header -->
-
-    <!-- Main content -->
-    <div class="content">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-md-12">
-            <a href="{{ route('categories.create')}}" class="btn btn-success float-right">Add</a>
-          </div>
-          <div class="col-ml-12">
-          trang chur
-          </div>
-        
+                    {{ __('You are logged in!') }}
+                </div>
+            </div>
         </div>
-        <!-- /.row -->
-      </div><!-- /.container-fluid -->
     </div>
-    <!-- /.content -->
-  </div>
-  <!-- /.content-wrapper -->
-
-@endsection  
-  
+</div>
+@endsection

@@ -3,7 +3,7 @@
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
       <img src="{{ asset('admin/dist/img/AdminLTELogo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
-      <span class="brand-text font-weight-light">AdminLTE 3</span>
+      <span class="brand-text font-weight-light">Hải Nguyễn</span>
     </a>
 
     <!-- Sidebar -->
@@ -36,25 +36,80 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
             
+          <li class="nav-item">
+            <a href="" class="nav-link">
+              <i class="fa-solid fa-gauge-high"></i>
+              <p>
+                   Thống kê         
+              </p>
+            </a>
           </li>
+      
+          <li class="nav-item">
+            <a href="{{ route('user.index') }}" class="nav-link">
+              <i class="fa-solid fa-users"></i>
+              <p>
+                Quản lý tài khoản
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('gplx.index') }}" class="nav-link">
+              <i class="fa-solid fa-book"></i>
+              <p>
+                Quản lý thông tin khách
+              </p>
+            </a>
+          </li>
+         
           <li class="nav-item ">
             <a href="{{ route('categories.index') }}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="fa-solid fa-car-side"></i>
               <p>
-                Danh sach san pham
+                Quản lý loại ô tô
               </p>
             </a>
           </li>
-
+          <li class="nav-item">
+            <a href="{{route('gara.index')}}" class="nav-link">
+              <i class="fa-solid fa-warehouse"></i>
+              <p>
+                Quản lý gara
+              </p>
+            </a>
+          </li>
           <li class="nav-item">
             <a href="{{ route('car.index') }}" class="nav-link">
-              <i class="nav-icon fas fa-th"></i>
+              <i class="fa-solid fa-car"></i>
               <p>
-                Danh sach o to
+                Quản lý ô tô
               </p>
             </a>
           </li>
-            
+          <li class="nav-item">
+            <a href="{{ route('blog.index') }}" class="nav-link">
+              <i class="fa-sharp fa-solid fa-pen"></i>
+              <p>
+                Quản lý bài đăng
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('discount.index') }}" class="nav-link">
+              <i class="fa-solid fa-percent"></i>
+              <p>
+                Quản lý mã giảm giá
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="{{ route('renral.index') }}" class="nav-link">
+              <i class="fa-solid fa-truck"></i>
+              <p>
+               Quản lý thuê ô tô
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
