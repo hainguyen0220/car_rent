@@ -58,25 +58,34 @@ Route::prefix('categories')->group(function () {
 
     Route::get('/delete/{id}', [CategoryController::class,'delete'] )->name('categories.delete');
 
+});
+
+// Garas
+Route::prefix('garas')->group(function () {
+    Route::get('/', [AdminGaraController::class,'index'] )->name('gara.index');
+    Route::get('/create', [AdminGaraController::class,'create'] )->name('gara.create');
+    Route::post('/store', [AdminGaraController::class,'store'] )->name('gara.store'); 
     
 });
 
 // Cars
 Route::prefix('cars')->group(function () {
     Route::get('/', [AdminCarController::class,'index'] )->name('car.index');
-    Route::get('/create', [AdminCarController::class,'create'] )->name('car.create');  
+    Route::get('/create', [AdminCarController::class,'create'] )->name('car.create');
+    Route::post('/store', [AdminCarController::class,'store'] )->name('car.store'); 
+
 });
 
-// Garas
-Route::prefix('garas')->group(function () {
-    Route::get('/', [AdminGaraController::class,'index'] )->name('gara.index');
-    Route::get('/create', [AdminGaraController::class,'create'] )->name('gara.create'); 
-});
 
 // Blog
 Route::prefix('blog')->group(function () {
     Route::get('/', [AdminBlogController::class,'index'] )->name('blog.index');
-    Route::get('/create', [AdminBlogController::class,'create'] )->name('blog.create'); 
+    Route::get('/create', [AdminBlogController::class,'create'] )->name('blog.create');
+    Route::post('/store', [AdminBlogController::class,'store'] )->name('blog.store');
+    Route::get('/edit/{id}', [AdminBlogController::class,'edit'] )->name('blog.edit');
+    Route::post('/update/{id}', [AdminBlogController::class,'update'] )->name('blog.update');
+
+
 });
 
 // Discount

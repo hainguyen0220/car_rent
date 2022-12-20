@@ -8,4 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 class Gara extends Model
 {
     use HasFactory;
+    // protected $fillable = ['name', 'address', 'phone', 'describe','image'];
+    protected $guarded =[];
 }

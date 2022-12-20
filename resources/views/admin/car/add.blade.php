@@ -70,7 +70,7 @@
                     <div class="form-group">
                         <label >Mô tả</label>
                         <textarea 
-                        class="form-control tinymce_editor_init" 
+                        class="form-control " 
                         name="describe"
                         rows="3"></textarea>
                     </div>
